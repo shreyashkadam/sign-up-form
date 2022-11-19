@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
     <title>Sign-Up Form</title>
 </head>
 
@@ -13,22 +16,61 @@
     <div class="main">
         <div class="left-main">
             <div class="logo">
-                <div class="logo-img"></div>
-                <div class="logo-text"></div>
+                <img class="logo-img" src="./assets/img/odin-lined.png" alt="odin-lined">
+                <div class="logo-text">ODIN</div>
             </div>
-            <div class="left-img"></div>
+            <img class="left-img" src="./assets/img/leaves.jpg" alt="leaves">
         </div>
         <div class="right-main">
-            <div class="right-upper-text"></div>
+            <div class="right-upper-text">
+                <p>This is not a real online service! You know you need something like this in your real life to
+                    help you realize your deepest dreams.
+                    <br>
+                    Sign up <i>now</i> to get started
+                    <br>
+                    <br>
+                    You <i>know</i> you want to
+                </p>
+            </div>
             <form action="#">
                 <div class="form-container">
-                    <div class="form-upper-text"></div>
-                    <div class="form-input"></div>
+                    <div class="form-container-upper">
+                        <div class="form-upper-text">
+                            Let's do this!
+                        </div>
+                        <div class="form-input">
+                            <div>
+                                <label for="fname">FIRST NAME</label>
+                                <input type="text" name="fname" id="fname" required />
+                            </div>
+                            <div>
+                                <label for="lname">LAST NAME</label>
+                                <input type="text" name="lname" id="lname" required />
+                            </div>
+                            <div>
+                                <label for="email">EMAIL</label>
+                                <input type="email" name="email" id="email" required />
+                            </div>
+                            <div>
+                                <label for="p_no">PHONE NUMBER</label>
+                                <input type="text" name="p_no" id="p_no" required />
+                            </div>
+                            <div>
+                                <label for="psw">PASSWORD</label>
+                                <input type="password" name="psw" id="psw" required />
+                            </div>
+                            <div>
+                                <label for="psw-confirm">CONFIRM PASSWORD</label>
+                                <input type="password" name="psw-confirm" id="psw-confirm" required />
+                            </div>
+                        </div>
+                    </div>
                     <div class="form-buttons">
-                        <div class="create-account"></div>
+                        <div class="create-account">
+                            <button>Create Account</button>
+                        </div>
                         <div class="login">
-                            <div class="login-text"></div>
-                            <div class="login-button"></div>
+                            Already have an account? <a href="#">Log in</a>
                         </div>
                     </div>
                 </div>
